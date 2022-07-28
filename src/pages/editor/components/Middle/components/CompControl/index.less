@@ -1,0 +1,48 @@
+.menuBox {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 0;
+  width: 100px;
+  height: 100%;
+  margin-left: -130px;
+  transition: all ease-in-out 0.5s;
+  .compMenu {
+    position: absolute;
+    top: 50%;
+    right: -224px;
+    flex-direction: column;
+    width: 50px;
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    .compMenuItem {
+      line-height: 39px;
+      text-align: center;
+      &:hover {
+        color: #999;
+      }
+      .compIcon {
+        color: #a0a0a0;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.moreBtn {
+  font-size: 14px;
+  color: #fff;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  span {
+    margin-right: 5px;
+  }
+  cursor: pointer;
+  &:hover {
+    color: #0096fb;
+  }
+}

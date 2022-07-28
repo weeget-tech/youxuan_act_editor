@@ -1,0 +1,29 @@
+.navigationBar {
+  position: relative;
+  width: 375px;
+  height: 100%;
+  min-height: 88px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  .deviceBackground {
+    width: 100%;
+  }
+  .naviTitle {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    color: #3c3c3c;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  &:active {
+    // 鼠标点击效果
+    top: 2px;
+  }
+}

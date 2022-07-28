@@ -1,0 +1,22 @@
+.droppable {
+  position: relative;
+  z-index: 2;
+  width: 375px;
+  min-height: 665px;
+  margin: 50px auto 50px;
+  overflow: visible;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  // box-shadow: 0 0 6px rgba(152, 153, 161, 0.3);
+  box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px 0px rgba(0, 0, 0, 0.08),
+    0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.droppablePanel {
+  position: relative;
+  width: 100%;
+  min-height: 665px;
+}
+:global(.react-draggable-dragging) {
+  z-index: 99;
+}

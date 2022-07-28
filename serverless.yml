@@ -1,0 +1,21 @@
+# serverless.yml
+component: website # (必填) 引用 component 的名称，当前用到的是 tencent-website 组件
+name: youxuan_act_backend # (必填) 该 website 组件创建的实例名称
+stage: dev
+
+inputs:
+  src:
+    src: ./ # Upload static files
+    index: index.html # 入口
+    dist: ./dist  # 开启hook必填
+    hook: npm run build # 上传前跑构建脚本
+    # websitePath: ./
+  exclude: # exclude file
+    - .env
+    - '.git/**'
+    - '**/*.log'
+    - '**/node_modules'
+    - '**/package-lock.json'
+  region: ap-guangzhou
+  bucketName: ${stage}-yx-act-backend
+  protocol: https

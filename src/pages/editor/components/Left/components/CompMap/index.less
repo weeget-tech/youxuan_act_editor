@@ -1,0 +1,86 @@
+.compMapBox {
+  overflow: hidden;
+  flex: 1;
+  // box-shadow: 0 0 6px rgba(152, 153, 161, 0.3);
+  .CompMapTitle {
+    width: 100%;
+    padding: 0 12px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      color: #33383e;
+      font-weight: 700;
+      font-size: 16px;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      padding: 20px 0;
+    }
+  }
+  .penelBox {
+    height: 100%;
+    padding: 0px 12px 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #fff;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .componentsMapItem {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin-bottom: 10px;
+      background-color: #f6f7f9;
+      border-radius: 4px;
+      // box-shadow: 0 0 6px rgba(152, 153, 161, 0.2);
+      &.active {
+        background-color: #e9ebed;
+      }
+      .dragIcon {
+        margin: 0 10px;
+        color: #767676;
+        font-size: 12px;
+        cursor: grab;
+      }
+      .compTitle {
+        width: 210px;
+      }
+      .compMenuItem {
+        margin-right: 10px;
+        color: #767676;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      // &:last-child {
+      //   margin-bottom: 100px;
+      // }
+    }
+  }
+}
+
+.abTestBtn {
+  width: 100%;
+  background-color: #eff6ff;
+  color: #3c44f9;
+  margin-bottom: 15px;
+  &:hover {
+    background-color: #3c44f9;
+  }
+  &:focus {
+    background-color: #3c44f9;
+  }
+}
+
+.coverCompBox {
+  padding: 10px 10px 0;
+  border: 2px solid #78e9ff;
+  margin-bottom: 10px;
+  .coverCompBoxTitle {
+    margin-bottom: 10px;
+    color: #3c3c3c;
+    font-size: 12px;
+  }
+}
