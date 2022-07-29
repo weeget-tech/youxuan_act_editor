@@ -8,7 +8,6 @@
     "build": "cross-env UMI_ENV=alirelease umi build",
     "build:pro": "cross-env UMI_ENV=pro umi build",
     "deploy": "npm run site && npm run gh-pages",
-    "dev": "npm run start:pro",
     "gh-pages": "gh-pages -d dist",
     "i18n-remove": "pro i18n-remove --locale=zh-CN --write",
     "postinstall": "umi g tmp",

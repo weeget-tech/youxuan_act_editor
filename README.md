@@ -57,18 +57,14 @@ yarn
 ### 运行项目
 
 ```bash
-npm start
+npm run start:dev
 ```
 
 #### 运行指定环境(请求对应环境的接口)
 
 ```bash
-# alipressure
-npm run start:alipressure
-# release
-npm run start:release
-# or alirelease 同 start
-npm run start:alirelease
-# or 生成
+# test
+npm run start:dev
+# or production
 npm run start:pro
 ```
